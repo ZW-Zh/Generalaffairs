@@ -30,5 +30,7 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
     compile 'com.ashokvarma.android:bottom-navigation-bar:2.0.2'
     compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+    compile 'com.contrarywind:Android-PickerView:3.2.6'
+    compile 'com.makeramen:roundedimageview:2.3.0'
     testCompile 'junit:junit:4.12'
 }

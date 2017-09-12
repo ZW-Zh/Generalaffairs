@@ -5,18 +5,15 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.android.zzw.generalaffairs.Adapter.AdapterFragment;
+import com.android.zzw.generalaffairs.personalcenter.personalcenterFragment;
+import com.android.zzw.generalaffairs.service.servicefragment;
 
 import java.util.ArrayList;
-import java.util.List;
-
-import cn.bingoogolapple.bgabanner.BGABanner;
-import cn.bingoogolapple.bgabanner.BGABannerUtil;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private ViewPager viewPager;
@@ -40,9 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ivservice = (ImageView) findViewById(R.id.ivservice);
         homepageFragment homepageFragment = new homepageFragment();
         servicefragment servicefragment = new servicefragment();
+        personalcenterFragment personalcenterFragment=new personalcenterFragment();
         fragments.add(homepageFragment);
         fragments.add(servicefragment);
-        fragments.add(new Fragment());
+        fragments.add(personalcenterFragment);
         ivhomepage.setImageResource(R.drawable.homepagepressed);
         homepage.setOnClickListener(this);
         service.setOnClickListener(this);

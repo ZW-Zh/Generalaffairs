@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 
 import com.android.zzw.generalaffairs.Adapter.InfoAdapter;
 import com.android.zzw.generalaffairs.Bean.mainRecyclerview;
+import com.android.zzw.generalaffairs.view.ButtonView;
 
 import java.util.ArrayList;
 import java.util.List;

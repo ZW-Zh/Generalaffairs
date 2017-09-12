@@ -1,5 +1,6 @@
-package com.android.zzw.generalaffairs;
+package com.android.zzw.generalaffairs.service;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,12 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import com.android.zzw.generalaffairs.R;
+
 /**
  * Created by zzw on 2017/9/12.
  */
 
 public class servicefragment extends Fragment {
-    private ImageButton backbtn;
+    private ImageButton repair;
 
     @Nullable
     @Override
@@ -26,15 +29,16 @@ public class servicefragment extends Fragment {
         return v;
     }
     private void setToolbar(View v){
-        backbtn = (ImageButton) v.findViewById(R.id.back);
+        repair = (ImageButton) v.findViewById(R.id.repairs);
         Toolbar toolbar = (Toolbar) v.findViewById(R.id.toolbar);
         toolbar.setTitle("");
 
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
-        backbtn.setOnClickListener(new View.OnClickListener() {
+        repair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(getActivity(),repairActivity.class);
+                startActivity(intent);
             }
         });
     }

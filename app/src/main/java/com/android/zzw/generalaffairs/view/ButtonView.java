@@ -1,4 +1,4 @@
-package com.android.zzw.generalaffairs;
+package com.android.zzw.generalaffairs.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.android.zzw.generalaffairs.R;
 
 /**
  * Created by zzw on 2017/9/10.

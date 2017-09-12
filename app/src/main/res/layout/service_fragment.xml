@@ -23,12 +23,12 @@
             android:text="总务服务"
             android:textSize="20sp"
             android:maxLines="1" />
-        <ImageButton
+       <!-- <ImageButton
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:background="@drawable/back"
             android:id="@+id/back"
-            />
+            />-->
     </android.support.v7.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/repairs"
+            android:id="@+id/repairs"
             android:layout_weight="1"
             />
         <ImageButton
